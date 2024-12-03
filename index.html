@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOWER SHOP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        window.onload = function () {
+        
+        var chart = new CanvasJS.Chart("Chart", {
+            theme: "light1", // "light2", "dark1", "dark2"
+            animationEnabled: false, // change to true		
+            title:{
+                text: "Flower Chart"
+            },
+            data: [
+            {
+                // Change type to "bar", "area", "spline", "pie",etc.
+                type: "pie",
+                dataPoints: [
+                    { label: "Roses",  y: 40250  },
+                    { label: "Lilies", y: 26000 },
+                    { label: "Chrysanthemums", y: 40100 },
+                    { label: "Lisianthus",  y: 40250 },
+                    { label: "Hydranheas",  y: 33250  },
+                    { label: "Freesias",  y: 30250  },
+                    { label: "Snapdragons",  y: 40750  },                   
+                    { label: "Carnation",  y: 50250  }
+                ]
+            }
+            ]
+        });
+        chart.render();
+        
+        }
+        </script>
+</head>
+<body>
+    <div class="welcome">  Welcome to our flower shop
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Search Flower"
+                       name="search">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+    </div>
+        
+    </div>
+    <div class="image"><img src="logo.png" class="logo">
+     <div class="word"><b>ROSE</b><BR>flower shop</div>    
+        <div class="words">
+            <div class="dropdown">HOME
+                <div class="dropdown-content">
+                <a href="ROSES/HomePageRose.html">HOME PAGE ROSE 1</a>
+                <a href="LILIES/HomePageLily.html">HOME PAGE LILY 2</a>
+                <a href="CHRYSANTHEMUM/HomePageChrysanthemum.html">HOME PAGE CHRYSANTHEMUM 3</a>
+                <a href="LISIANTHUS/HomePageLisianthus.html">HOME PAGE LISIANTHUS 4</a>
+                <a href="HYDRANGEAS/HomePageHydrangeas.html">HOME PAGE HYDRANGEAS 5</a>
+                <a href="FREESIAS/HomePageFreesias.html">HOME PAGE FREESIAS 6</a>
+                <a href="SNAPDRAGONS/HomePageSnapdragons.html">HOME PAGE SNAPDRAGON 7</a>
+                <a href="CARNATION/HomePageCarnation.html">HOME PAGE CARNATIONS 8</a>
+                </div>
+              </div>
+              </div>
+        <div class="words"><div class="dropdown">SHOP
+                <div class="dropdown-content">
+                <a href="ROSES\ShopRose.html">ROSE</a>
+                <a href="LILIES\ShopLily.html">LILY</a>
+                <a href="CHRYSANTHEMUM\ShopChrysanthemum.html">CHRYSANTHEMUM</a>
+                <a href="LISIANTHUS\ShopLisianthus.html">LISIANTHUS</a>
+                <a href="HYDRANGEAS\ShopHydrangeas.html">HYDRANGEAS</a>
+                <a href="FREESIAS\ShopFreesias.html">FREESIAS</a>
+                <a href="SNAPDRAGONS\ShopSnapdragons.html">SNAPDRAGON</a>
+                <a href="CARNATION/ShopCarnation.html">CARNATIONS</a>
+                </div>
+              </div></div>
+              <div class="words"><div class="dropdown">ABOUT US<div class="dropdown-content">
+                <a href="About.html">ABOUT US</a>
+                </div>
+              </div></div>
+              <div class="words"><div class="dropdown">PAGES
+                <div class="dropdown-content">
+                <a href="login.html">LOGIN</a>
+                </div>
+              </div></div>
+        
+        <div class="words"><div class="dropdown">CONTACT ME
+            <div class="dropdown-content">
+            <a href="ContactUs.html">ENQUIRY</a>
+            </div> </div></div>
+            <div><img src="images.jpg" class="logo"></div>
+    </div>
+         
+
+    <div class="img"><img src="Home bg.png" width="1520px" height="600px">
+        <div class="best">BEST FLOWER SHOP <button class="button">Shop now!</button></div>
+    </div>
+    <div class="variety">VARIETY OF COLLETION</div>
+    <div class="Flower-image">
+        <a href="ROSES\ShopRose.html"><img src="rose.jpg" width="300px" height="300px"></a><br>
+        <div>
+            <a href="LILIES/HomePageLily.html"><img src= "lily.jpg" width="300px" height="300px"></a></div><br>
+        <div>
+            <a href="CHRYSANTHEMUM\ShopChrysanthemum.html"><img src="Chrysanthemum.jpg" width="300px" height="300px"></a></div><br>
+        <div>
+            <a href="LISIANTHUS\ShopLisianthus.html"><img src="lisianthus.jpg"width="300px" height="300px"></a></div><br></div>
+    </div>
+    <div class="Flower-name">
+        <div>ROSES</div><br>
+        <div>&nbsp;LILIES</div><br>
+        <div>CHRYSANTHEMUMS</div><br>
+        <div>LISIANTHUS</div><br>
+    </div>
+    <div class="Flower-image">
+        <a href="HYDRANGEAS\ShopHydrangeas.html"><img src="hydrangeas.jpg" width="300px" height="300px"></a><br>
+        <div>
+            <a href="FREESIAS\ShopFreesias.html"><img src= "freesiae.jpg" width="300px" height="300px"></a></div><br>
+        <div>
+            <a href="SNAPDRAGONS\ShopSnapdragons.html"><img src="snapdragons.jpg" width="300px" height="300px"></a></div><br>
+        <div>
+            <a href="CARNATION/ShopCarnation.html"> <img src="carnation.jpg"width="300px" height="300px"></a></div><br></div>
+    </div>
+    <div class="Flower-name">
+        <div>HYDRANGEAS</div><br>
+        <div>FREESIAS</div><br>
+        <div>SNAPDRAGONS</div><br>
+        <div>CARNATIONS</div><br>
+    </div>
+    <div class="chart-container">
+        <div id="Chart" style="height: 370px; width: 100%; color: pink;"></div>
+<script src="https://cdn.canvasjs.com/canvasjs.min.js"> </script>
+    </div>
+    <div class="black"><div class="shop"><b style="font-size: 25px;">FLOWER SHOP<br></b></br>We Are from Rose Flower Shop.
+        <br>We provide more variety of flower.
+    </div>
+    <div class="link"><b style="font-size: 25px;">SOCIAL LINK</b><br><br>
+        <i class="fa-brands fa-instagram"style="color: aqua;"></i><br>
+        <i class="fa-brands fa-linkedin" style="color: aqua;" ></i><br>
+        <i class="fa-brands fa-twitter" style="color: aqua;"></i><br>
+        <i class="fa-brands fa-facebook" style="color: aqua;"></i>
+    </div>
+    <div class="contact"><b style="font-size: 25px;">CONTACT ME</b><br><br>
+        <i class="fa-solid fa-envelope" style="color: lightblue;"></i>&nbsp;&nbsp;<a href="pjmathumithait@gmail.com">pjmathumithait@gmail.com</a><br><br>
+    <i class="fa-solid fa-location-dot" style="color: lightblue;"></i> South Kundal, Kanniyakumari<br>
+</div>
+
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,153 @@
+body{
+    background-color: lightpink;
+    padding: 0;
+    margin: 0;
+}
+.welcome{
+    margin-top: 30px;
+   display: grid;
+   grid-template-columns: 80% 20% 20%;
+   flex-direction: row; 
+   height: 50px;
+   margin-left: 50px;
+}   
+.image{
+    display: grid;
+    grid-template-columns: 5% 20% 10% 10% 10% 10% 20% 30% 40%;
+    flex-direction: row; 
+    height: 70px;
+   
+}
+.logo{
+border-radius: 250px;
+border-right: 35px;
+width: 50px;
+margin-left: 10px;
+margin-top: 5px;
+}
+.word{
+   margin-top: 10px;
+   cursor: pointer;
+}
+.words{
+   margin-top: 15px;
+   color: rgb(8, 4, 0);
+}
+.drop-button {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .dropdown {
+    display: block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+  }
+.dropdown-content a {
+    padding: 12px;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.img{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    flex-direction: row; 
+    width: 100%;
+}
+.best{
+    display: grid;
+    grid-template-rows: 40% 50%;
+    flex-direction: column; 
+    font-size: 45px;
+    text-align: center;
+    margin-top: 250px;
+}
+.button{
+    margin-left: 300px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color:rgb(235, 37, 37);
+    border-color: rgba(255, 0, 0, 0.56);
+    color:white;
+    border-radius: 2px;
+    cursor:pointer;
+    font-size: 24px;
+    font-family: Arial;
+    margin-right: 30px;
+}
+.button:hover{
+background-color: green;
+}
+.variety{
+    display: grid;
+    grid-template-columns:100% ;
+    flex-direction: row; 
+    height: 100px;
+    margin-top: 100px;
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    margin-left: 600pX;
+}
+.Flower-image{
+    display: grid;
+    grid-template-columns: 20% 5% 20% 5% 20% 5% 20% ;
+    flex-direction: row; 
+    margin-top: 50px;
+    margin-left: 60px; 
+}
+.Flower-name{
+    display: grid;
+    grid-template-columns: 20% 5% 20% 5% 20% 5% 20% ;
+    flex-direction: row; 
+    height:40px;
+    margin-top: 30px;
+    margin-left: 10px; 
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.chart-container{
+    width: 1500;
+    height: 400px;
+    margin: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    color: pink;
+}
+.black{
+    background-color: black;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 30%  40% 30% ;
+    flex-direction: row; 
+    color: beige;
+    padding:0 ;
+    margin-top: 50px;
+}
+.shop{
+    text-align: center;
+    margin-top:60px ;
+    line-height: 1.5;
+   
+}
+.link{
+    text-align: center;
+    margin-top:60px ;
+    line-height: 1.5;
+    
+}
+.contact{
+    text-align: center;
+    margin-top:60px ;
+    line-height: 1.5;
+    
+}
