@@ -5,12 +5,22 @@
     <h2>JavaScript Animation</h2>
     <script type="text/Javascript">
         var logo=null;
+        
+        //this will display an alert message on my animation page
+        function message()
+        {
+            alert("WELCOME TO ANIMATION PAGE");
+        }
+        
         function Animation()
         {
             logo=document.getElementById('pic');      
             logo.style.position='relative'; 
             logo.style.top='1px';  
         }
+        /* 
+        This image (logo) will move down.
+        */
         function moveBottom() 
         {  
             logo.style.top=parseInt(logo.style.top)+100+'px';  
@@ -19,7 +29,8 @@
     </script>
 </head>
 <body>
-    <input type ="button" value="Click" onclick="moveBottom();"/> 
+    <input type="button" value="Click" onclick="moveBottom();"/> 
     <img id="pic" src="c:\Users\Mathumitha\Desktop\FLOWER SHOP\logo.png" width="100px" height="100px"/><br><br> 
+    <input type="button" value="Alert" onclick="message()"/>  
 </body>
 </html>
