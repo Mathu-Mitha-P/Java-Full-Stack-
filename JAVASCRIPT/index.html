@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script type="text/Javascript">
+         //this will display value 10 and the datatype 'number'
+         var a=10;
+        console.log(a);
+        console.log(typeof a);
+        //this will display value Hello and the datatype 'string'
+        var b="Hello";
+        console.log(b);
+        console.log(typeof b);
+        //this will display value true and the datatype 'boolean'
+        var c=true;
+        console.log(c);
+        console.log(typeof c);
+        //this will display value and the datatype 'undefined'
+        var d;
+        console.log(d);
+        console.log(typeof d);
+        //this will display value null and the datatype 'object'
+        var e=null;
+        console.log(e);
+        console.log(typeof e);
+        //this will display value A and the datatype 'string'
+        var f='A';
+        console.log(f);
+        console.log(typeof f);
+        //this will display value [1,2,3,4] and the datatype 'object'
+        var g=[1,2,3,4];
+        console.log(g);
+        console.log(typeof g);
+       
+        /*document.write will display on webpage.
+        console.log will display on inspect
+        */ 
+
+        Student1={Standard:10,Name:"Anbu",RollNo:501,Tamil:88,English:76,Maths:93,Science:78,Social:72,Total:407}  
+        let Total=Student1.Tamil+Student1.English+Student1.Maths+Student1.Science+Student1.Social;
+        document.writeln("Standard : "+Student1.Standard+" Name : "+Student1.Name+" RollNo : "+Student1.RollNo+
+        " Tamil : "+Student1.Tamil+" English : "+Student1.English+" Maths : "+Student1.Maths+" Science : "+Student1.Science+
+        " Social : "+Student1.Social+" Total : "+Student1.Total);
+        function message1() 
+        {
+            alert("Welcome to my new website"); //this is an alert message
+        }
+        function message2()
+        {  
+            var msg= confirm("Would you like to take a look at my new website");  //this is confirmation message
+            if(msg == true)
+            {  
+                alert("Yes");  
+            }  
+            else
+            {  
+                alert("No");  
+            }  
+        }  
+        function message3()
+        {  
+            var details= prompt("Who are you?");  //this is a prompt message
+            alert("I am "+details);  
+        }  
+    </script>
+</head>
+<body>
+    
+    <h3>Alert Message</h3>
+    <input type="button" value="Alert" onclick="message1()"/>
+    <h3>Website Message</h3>
+    <input type="button" value="Website" onclick="message2()"/>
+    <h3>Details</h3>
+    <input type="button" value="Click" onclick="message3()"/>    
+</body>
+</html>
