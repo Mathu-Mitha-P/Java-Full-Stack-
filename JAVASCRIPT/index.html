@@ -37,42 +37,63 @@
         /*document.write will display on webpage.
         console.log will display on inspect
         */ 
-
+        //school details
         Student1={Standard:10,Name:"Anbu",RollNo:501,Tamil:88,English:76,Maths:93,Science:78,Social:72,Total:407}  
         let Total=Student1.Tamil+Student1.English+Student1.Maths+Student1.Science+Student1.Social;
         document.writeln("Standard : "+Student1.Standard+" Name : "+Student1.Name+" RollNo : "+Student1.RollNo+
         " Tamil : "+Student1.Tamil+" English : "+Student1.English+" Maths : "+Student1.Maths+" Science : "+Student1.Science+
         " Social : "+Student1.Social+" Total : "+Student1.Total);
-        function message1() 
+
+
+        function message()
         {
-            alert("Welcome to my new website"); //this is an alert message
-        }
-        function message2()
-        {  
-            var msg= confirm("Would you like to take a look at my new website");  //this is confirmation message
-            if(msg == true)
-            {  
-                alert("Yes");  
-            }  
+            alert("Welcome to my new website");   //this is an alert message
+            var username=prompt(" What is your name? ");  //this is a prompt message
+            var userchoice=confirm("Hello " + username + " Would you like to take a look at my new website");  //this is confirmation message
+            if(userchoice==true)
+            {
+                alert("Great! "+username);
+            }
             else
-            {  
-                alert("No");  
-            }  
-        }  
-        function message3()
-        {  
-            var details= prompt("Who are you?");  //this is a prompt message
-            alert("I am "+details);  
-        }  
+            {
+                alert("Bye "+username);
+            }
+        }   
+        function square() //Function to calulate the square of the number
+        {
+            var num=document.getElementById("num").value; // Get the value
+            alert(num*num); //display the square of the number using an alert box
+        }
+        function cube() //Function to calulate the cube of the number
+        {
+            var number1=document.getElementById("number1").value; // Get the value
+            var number2=document.getElementById("number2").value; // Get the value
+            var number3=document.getElementById("number3").value; // Get the value
+            document.writeln("Number 1 : " +number1*number1*number1 +"<br>"); //this line calculate and display the cube of the number1
+            document.writeln("Number 2 : " +number2*number2*number2 +"<br>"); //this line calculate and display the cube of the number2
+            document.writeln("Number 3 : " +number3*number3*number3 +"<br>"); //this line calculate and display the cube of the number3
+        }
     </script>
 </head>
 <body>
-    
-    <h3>Alert Message</h3>
-    <input type="button" value="Alert" onclick="message1()"/>
-    <h3>Website Message</h3>
-    <input type="button" value="Website" onclick="message2()"/>
-    <h3>Details</h3>
-    <input type="button" value="Click" onclick="message3()"/>    
+    <br>
+    <input type="button" value="Click" onclick="message()"/>
+    <br>
+    <form> 
+        <h3>Enter Number : 
+        <input type="text" id="num" name="num"/></h3>
+        <input type="button" value="Square" onclick="square()"/>
+    </form>
+    <br>
+    <form> 
+        <h3>Enter Number 1: 
+        <input type="text" id="number1" name="number1"/></h3>
+        <h3>Enter Number 2: 
+        <input type="text" id="number2" name="number2"/></h3>
+        <h3>Enter Number 3:    
+        <input type="text" id="number3" name="number3"/></h3>
+        <input type="button" value="Cube" onclick="cube()"/>
+        
+    </form>
 </body>
 </html>
