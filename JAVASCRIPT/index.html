@@ -73,6 +73,20 @@
             document.writeln("Number 2 : " +number2*number2*number2 +"<br>"); //this line calculate and display the cube of the number2
             document.writeln("Number 3 : " +number3*number3*number3 +"<br>"); //this line calculate and display the cube of the number3
         }
+        function printstatement()
+        {
+            var v=document.myform.statement.value;
+            alert("Welcome "+v);
+        }
+        function fun() 
+        {
+            var val1=document.getElementsByClassName("SimpleClass");
+            document.writeln("DOM METHOD : <br>"+val1);  
+        }
+        function comment() 
+        {  
+            var data= "Name:<input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='80'></textarea><br><input type='submit' value='Post Comment'>";document.getElementById('Mylocation').innerHTML=data;  
+        }  
     </script>
 </head>
 <body>
@@ -93,7 +107,17 @@
         <h3>Enter Number 3:    
         <input type="text" id="number3" name="number3"/></h3>
         <input type="button" value="Cube" onclick="cube()"/>
-        
     </form>
+    <br>
+    <form name="myform">
+        Enter Statement:<input type="text" name="statement"/>
+        <input type="button" onclick="printstatement()" value="print"/>
+    </form>
+    <h5>DOM METHODS</h5>
+    <input type="button" class="SimpleClass" value="click" onclick="fun()"/>
+    <form name="MyForm">  
+        <input type="button" value="comment" onclick="comment()">  
+        <div id="Mylocation"></div>  
+    </form> 
 </body>
 </html>
