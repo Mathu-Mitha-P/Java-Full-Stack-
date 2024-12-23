@@ -1,0 +1,40 @@
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    // Initialize EmailJS with your User ID (from EmailJS dashboard)
+    emailjs.init("Jr7DIXpE0WAUH0MKW");
+  
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const errorMessage = document.getElementById("errorMessage");
+  
+      // Example credentials for checking (replace with real authentication in production)
+      const validUsername = "admin";
+      const validPassword = "password123";
+  
+      if (username === validUsername && password === validPassword) {
+        errorMessage.textContent = ""; // Clear any previous error
+  
+        // Prepare parameters for EmailJS
+        const templateParams = {
+          user_name: username,
+          message: `Login successful for user: ${username}`
+        };
+  
+        // Send an email using EmailJS after successful login
+        emailjs.send("service_lcb7ayp", "template_9sdbtpn", templateParams)
+          .then(function(response) {
+            alert("Login successful! Email sent.");
+          })
+          .function(error) 
+          {
+            alert("Error sending email: " + error.text);
+          };
+      } else {
+        errorMessage.textContent = "Invalid username or password.";
+      }
+    });
+  </script>
